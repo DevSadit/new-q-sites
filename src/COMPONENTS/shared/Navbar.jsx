@@ -1,37 +1,37 @@
 const Navbar = () => {
   const navLinks = (
     <>
-      <li>
+      <li className="hover:text-blue-600 hover:shadow-blue-600">
         <a>Home</a>
       </li>
-      <li>
+      <li className="hover:text-blue-600 hover:shadow-blue-600">
         <a>Suggestion</a>
       </li>
       <li>
         <details>
-          <summary>
+          <summary className="hover:text-blue-600 hover:shadow-blue-600">
             <a>Question</a>
           </summary>
-          <ul className="p-2">
-            <li>
+          <ul className="p-2 bg-gray-900">
+            <li className="hover:text-blue-600 hover:shadow-blue-600">
               <a>SSC</a>
             </li>
-            <li>
+            <li className="hover:text-blue-600 hover:shadow-blue-600">
               <a>HSC</a>
             </li>
           </ul>
         </details>
       </li>
       <li>
-      <details>
-          <summary>
+        <details>
+          <summary className="hover:text-blue-600 hover:shadow-blue-600">
             <a>Books</a>
           </summary>
-          <ul className="p-2">
-            <li>
+          <ul className="p-2 bg-gray-900">
+            <li className="hover:text-blue-600 hover:shadow-blue-600">
               <a>SSC</a>
             </li>
-            <li>
+            <li className="hover:text-blue-600 hover:shadow-blue-600">
               <a>HSC</a>
             </li>
           </ul>
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-gray-900 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             {navLinks}
           </ul>
